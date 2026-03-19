@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Tabla de usuarios</h2>
+<table border="1">
+<tr><th>Nombre</th><th>Edad</th></tr>
+{% for user in usuarios %}
+<tr>
+    <td>{{ user.nombre }}</td>
+    <td>{{ user.edad }}</td>
+</tr>
+{% endfor %}
+</table>
+{% endblock %}
